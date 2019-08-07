@@ -147,6 +147,28 @@ public class DoublyLinkedList {
     } // end deleteKey()
 
     // displayForward()
+    public void displayForward() {
+        Node current = head;
+        System.out.println("Display Forward");
+        System.out.println("Doubly Linked List (first --> last)");
+        while (current.getNext() != null) {
+            current.displayNode();
+            current = current.getNext();
+        }
+        System.out.print("null " + "\n");
+    } // end displayForward()
+
     // displayBackward()
+    public void displayBackward() {
+        Node current = last;
+        System.out.println("Display Backward");
+        System.out.println("Doubly Linked List (last --> first)");
+        while (current.getPrevious() != null) {
+            current.displayNode();
+            current = current.getPrevious();
+        }
+        System.out.print("null" + "\n");
+
+    } // end displayBackward()
 
 } // end DoublyLinkedList Class

@@ -71,6 +71,15 @@ public class Main {
         cl.insertLast(100);
         cl.insertLast(200);
         cl.display();
+
+        System.out.println("\n---------------DOUBLY LINKED LIST------------------------------------------------------");
+        DoublyLinkedList dl = new DoublyLinkedList();
+        for (int i=0; i<=100; i += 10) {
+            dl.insertFirst(i);
+        }
+        dl.displayForward();
+        dl.displayBackward();
+
         System.out.println("\n---------------------------------------------------------------------------------------");
     } // end main()
 
