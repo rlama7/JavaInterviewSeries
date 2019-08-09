@@ -15,11 +15,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("\n------------------SELECTION SORT-------------------------------------------------------");
         SelectionSort ss = new SelectionSort();
-        int [] array = {34, 2, 12, 7, 3, 9, 1, 55, 0};
+        int [] array = {34, 2, 12, 7, 3, 9, 1, 55, 0, 3, 15};
         ss.selectionSort(array);
         display(array);
 
-        System.out.println("\n-------------------INSERTION SORT------------------------------------------------------");
+        System.out.println("\n\n-------------------INSERTION SORT----------------------------------------------------");
         InsertionSort ins = new InsertionSort();
         ins.insertionSort(array);
         display(array);
